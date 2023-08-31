@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página con Bootstrap y JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Bienvenido Ejercicio 11</h1>
+        <p>Esta página esta utilizando Bootstrap.</p>
+        <div class="form-group">
+            <label for="frase">Ingrese una frase:</label>
+            <input type="text" class="form-control" id="frase" placeholder="Ingrese la frase">
+        </div>
+        <button class="btn btn-primary" onclick="mostrarPalabraMasLarga()">Mostrar Palabra Más Larga</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function palabraLarga(frase) {
+            var palabras = frase.split(' ');
+            var palabraLarga = palabras[0];
+
+            for (var i = 1; i < palabras.length; i++) {
+                if (palabras[i].length > palabraLarga.length) {
+                    palabraLarga = palabras[i];
+                }
+            }
+
+            return palabraLarga;
+        }
+
+        function mostrarPalabraMasLarga() {
+            var frase = document.getElementById("frase").value;
+            var resultado = palabraLarga(frase);
+            document.getElementById("resultado").innerHTML = "Palabra más larga: " + resultado;
+        }
+    </script>
+</body>
+
+</html>

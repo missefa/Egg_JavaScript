@@ -1,0 +1,10 @@
+var respuesta = prompt ("Ingrese un caracter: " );
+
+
+if (respuesta =="S" || respuesta == "N"){
+    alert ("Su respuesta fue correcta");
+
+} else {
+    alert("Su respuesta fue incorrecta");
+
+}

@@ -1,0 +1,15 @@
+var num1 = prompt ("Ingrese un número entero: " );
+
+
+var parimpar = num1 % 2;
+
+
+if ( parseInt(num1) == 0 ){
+
+    alert("El número no es par ni impar");
+}
+else if (parimpar != 0){
+        alert ("El número ingresado es impar")
+    } else{
+        alert ("El número ingresado es par")
+    }

@@ -1,0 +1,15 @@
+var limite = parseInt(prompt ("Ingrese el límite de la suma: " ));
+
+
+var total = 0 ;
+
+
+do {
+
+    var numing = parseInt(prompt ("Ingrese el número a sumar: "));
+
+    total = total + parseInt(numing);
+
+} while (total <= limite);
+
+alert("Llegó al límite establecido");

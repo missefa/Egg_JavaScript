@@ -1,0 +1,16 @@
+javaScript ej. 10 (js)
+
+
+
+let palabra= prompt("Ingrese una palabra");
+
+
+let invertirCadena = (palabra)=>{
+    let separar= palabra.split("");
+    let invertir= separar.reverse();
+    let unir= invertir.join("");
+    
+    return unir;
+} 
+
+console.log(invertirCadena(palabra));

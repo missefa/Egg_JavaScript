@@ -1,0 +1,24 @@
+var num1 = prompt ("Ingrese el primer número: " );
+var num2 = prompt ("Ingrese el segundo número: " );
+
+var oper = prompt ("Ingrese la operación a realizar: " );
+
+oper = oper.toUpperCase();
+
+switch (oper) {
+
+    case "S" :
+        alert ("La suma de los números es: " + (parseInt(num1)+parseInt(num2)));
+    break;
+    case "R" :
+        alert ("La resta de los números es: " + (parseInt(num1)-parseInt(num2)));
+    break;
+    case "M" :
+        alert ("La multiplicación de los números es: " + (parseInt(num1)*parseInt(num2)));
+    break;
+    case "D" :
+        alert ("La division de los números es: " + (parseInt(num1)/parseInt(num2)));
+    break;
+    default:
+        alert ("No eligió una operación válida");
+}

@@ -1,0 +1,23 @@
+javaScript ej. 11 (js)
+
+
+
+let frase = prompt("Ingrese una frase")
+
+let buscarPalabra = (frase) =>{
+    let l = frase.length
+    let palabra1="";
+    for (let i = 0; i < l; i++ ){
+        
+        let separar = frase.split(" ");
+        let palabra2 = separar;
+        
+        if(palabra1.length < palabra2.length) {
+            palabra1 = palabra2[i];
+        }; 
+    } 
+
+    return palabra1;
+}
+
+console.log("La palabra mas larga es: "+ buscarPalabra(frase));

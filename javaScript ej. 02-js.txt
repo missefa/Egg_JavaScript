@@ -1,0 +1,8 @@
+var respuesta = prompt ("Ingrese el radio de la circunferencia : " );
+
+
+var area = Math.PI * respuesta * respuesta;
+var perimetro = 2 * respuesta * Math.PI;
+
+alert(`El area del cículo es: ${area.toFixed(2)} 
+El perímetro del cículo es: ${perimetro.toFixed(2)}`);

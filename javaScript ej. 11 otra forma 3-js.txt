@@ -1,0 +1,37 @@
+javaScript ej. 11 (js)
+
+
+var palLarga ="";
+
+var frase = prompt("Ingrese una frase");
+
+// verifico que no ingrese un número
+while (!isNaN(frase)) {
+  frase = prompt("Los datos ingresados son incorrectos, ingrese una frase");
+}
+
+
+    alert("La palabra más larga es: " + larga(frase));
+
+
+function larga(frase){
+    var palabras = palabra=>frase.split(" ");
+
+
+
+    var lisPalabra = palabras(frase);
+
+
+
+    for (var i=0 ; i<=(lisPalabra.length-1); i++ ){
+    
+        if (lisPalabra[i].length > palLarga.length){
+            palLarga = lisPalabra[i];
+        }
+    
+    }
+
+return palLarga;
+
+
+}

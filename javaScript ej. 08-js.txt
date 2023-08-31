@@ -1,0 +1,34 @@
+var numMin = 0;
+var numMax = 0;
+var prom = 0;
+var cont = 0;
+var total = 0 ;
+
+do {
+    var numIng = parseInt(prompt ("Ingrese un número: " ));
+    
+    
+    
+        if (cont == 0 ){
+            numMin = numIng;
+            numMax = numIng; 
+        }
+
+cont++;
+total = total + numIng;
+if (numIng>numMax){
+    numMax = numIng;
+}   
+if (numIng<numMin && numIng!==0){
+    numMin = numIng;
+    
+
+}   
+ 
+
+} while (numIng !== 0);
+
+alert("El número máximo ingresado es: "+ numMax);
+alert("El número mínimo ingresado es: "+ numMin);
+prom = total / (cont-1);
+alert("El promedio de los números es: " + prom);

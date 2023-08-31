@@ -1,0 +1,16 @@
+var frase = prompt ("Ingrese una frase: ")
+
+var largo = frase.length;
+
+var fraseAux = "";
+
+
+
+for (var i=0; i<= largo; i++){
+
+fraseAux = fraseAux + frase.substring(i,i+1) + " ";
+
+
+}
+
+alert(fraseAux);

@@ -1,0 +1,8 @@
+let palabra = prompt ("Ingrese una Palabra");
+let subPalabra="";
+let l = palabra.length
+for (let i = 0; i < l; i++ ){
+    subPalabra += palabra.substring(i+1,i) + " "; 
+}
+console.log(subPalabra)
+

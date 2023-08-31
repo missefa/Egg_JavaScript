@@ -1,0 +1,24 @@
+javaScript ej. 18 (js)
+
+
+var valores = [true, 5, false, "hola", "adios", 2];
+
+let comp = valores[3].localeCompare(valores[4]);
+
+let textoMayor = comp === 1 ? `'${valores[4]}' es mayor que '${valores[3]}'`
+                    : comp === -1 ? `'${valores[3]}' es mayor que '${valores[4]}'`
+                        : `'${valores[3]}' y '${valores[4]}' son iguales`;
+console.log(textoMayor);
+
+let resultadoTrue = valores[0] || valores[2];
+let resultadoFalse = valores[0] && valores[2];
+
+console.log(resultadoFalse, resultadoTrue);
+
+let suma = valores[1] + valores[5];
+let resta = valores[1] - valores[5];
+let multiplicacion = valores[1] * valores[5];
+let division = valores[1] / valores[5];
+let modulo = valores[1] % valores[5];
+
+console.log(suma,resta,multiplicacion,division,modulo);
